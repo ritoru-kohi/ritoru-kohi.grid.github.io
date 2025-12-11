@@ -1,2 +1,2 @@
-# ritoru-kohi.grid.github.io
+# ritoru-kohi-grid.github.io
 Веб-сайт с котятами
