@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+    color: #333;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(#805252 , #e69a9a);
+}
+
+/* ДЛЯ ВСЕХ БЛОКОВ */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* ОБЩИЙ СТИЛЬ */
+.block {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+/* ШАПКА */
+.header {
+    background: #c46b6b;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* ЛИНИЯ */
+.divider {
+    height: 2px;
+    background: #ccc;
+    margin: 30px 0;
+}
+
+/* ЧЕТЫРЕ ПУНКТА В РЯД */
+.four-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.item {
+    background: #f0f0f0;
+    padding: 15px;
+    min-height: 150px;
+    overflow: hidden;
+}
+
+.item-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.item h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #8b4c4c;
+}
+
+/* ABOUT SECTION */
+.about-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.about-text h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+/* SERVICES/TEAMS */
+.section-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.section-subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.service-block {
+    background: #f0f0f0;
+    min-height: 200px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.service-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+/* ПОДДЕРЖКА */
+.support-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+/* ТАБЛИЦА */
+.table-section {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    background: #666;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+}
+
+td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+}
+
+/* АДАПТИВНОСТЬ */
+@media (max-width: 768px) {
+    .four-items,
+    .three-columns,
+    .about-section,
+    .support-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .item-image,
+    .about-image,
+    .service-image {
+        height: 200px;
+    }
+}
